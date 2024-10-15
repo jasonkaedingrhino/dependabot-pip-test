@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    groups:
+      # Combine any langchain-related updates together, because they are likely 
+      # linked/related to each other and need to be updated together
+      langchain:
+        patterns:
+          - "langchain*"
+      # Handle *most* library patches together
+      library-patches:
+        exclude-patterns:
+          - "paidpackage" # exclude internally-maintained code (paid version) from grouped updates
+        patterns:
+          - "*"
+        update-types:
+          - "patch"
