@@ -1,2 +1,2 @@
 # dependabot-pip-test
-Testing dependabot update issues
+Testing dependabot update issues with pip ecosystem
