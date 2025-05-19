@@ -5,6 +5,11 @@ updates:
     schedule:
       interval: "daily"
     groups:
+      # Combine any pydanticrelated updates together, because they are likely 
+      # linked/related to each other and need to be updated together
+      pydantic:
+        patterns:
+          - "pydantic*"
       # Combine any langchain-related updates together, because they are likely 
       # linked/related to each other and need to be updated together
       langchain:
