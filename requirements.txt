@@ -3,7 +3,7 @@ langchain==0.3.1
 langchain_openai==0.2.1
 numpy==1.26.4
 paidpackage==0.0.1
-pandas==2.2.1
+pandas==2.3.3
 pydantic==2.10.3
 pydantic_core==2.32.0
 pydantic-graph==0.1.5
